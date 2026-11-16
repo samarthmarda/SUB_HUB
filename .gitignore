@@ -1,0 +1,26 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+apps-script/Index.html
+
+# clasp / secrets
+.clasp.json.local
+.clasprc.json
+*credentials*.json
+
+# Logs
+*.log
+npm-debug.log*
+
+# Editor / OS
+.DS_Store
+.idea/
+.vscode/
+*.swp
+
+# Caches
+.cache/
+.vite/
+.eslintcache

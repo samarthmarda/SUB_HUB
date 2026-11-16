@@ -1,0 +1,27 @@
+{
+  "name": "subscription-hub",
+  "private": true,
+  "version": "1.0.0",
+  "description": "SUBSCRIPTION HUB — subscription management for a WhatsApp stock-market advisory group. Google Sheets + Google Apps Script backend, React + SWR frontend.",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build && node scripts/build-gas.mjs",
+    "preview": "vite preview",
+    "test": "node tests/run-tests.mjs",
+    "push": "clasp push",
+    "push:watch": "clasp push --watch",
+    "deploy": "npm run build && clasp push && clasp deploy",
+    "logs": "clasp logs"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.26.2",
+    "swr": "^2.2.5"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.2",
+    "vite": "^5.4.8"
+  }
+}
